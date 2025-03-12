@@ -1,0 +1,1722 @@
+{
+    "type": "",
+    "config": {},
+    "children": [
+        {
+            "type": "element",
+            "config": {
+                "id": "e1",
+                "width": "6"
+            },
+            "children": []
+        },
+        {
+            "type": "element",
+            "config": {
+                "id": "e2",
+                "width": "6"
+            },
+            "children": []
+        }
+    ],
+    "props": 
+        {
+            "enableTopToolbar": false,
+            "enableToolbarInternalActions": true,
+            "enableRowSelection": true,
+            "enableColumnActions": false
+        }
+    ,
+    "initialStates": {
+        "showGlobalFilter": true,
+        "pagination": { "pageSize": 15, "pageIndex": 2 },
+        "columnVisibility":{
+                    "name": true,
+                    "status": true,
+                    "role": true,
+                    "email": true,
+                    "teams": true,
+                    "age": false
+                }
+    },
+    "columns": [
+        {
+            "accessorKey": "name",
+            "header": "Name",
+            "size": 150,
+            "enableColumnFilter": true,
+            "enableSorting": false,
+            "enableHiding": false,
+            "enableColumnActions": true,
+            "filterFn": "startsWith",
+            "debounceDelay": 500
+            
+        },
+        {
+            "accessorKey": "status",
+            "header": "Status",
+            "size": 150,
+            "enableColumnFilter": false,
+            "enableSorting": false,
+            "enableHiding": false
+        },
+        {
+            "accessorKey": "role",
+            "header": "Role",
+            "size": 150,
+            "enableColumnFilter": true,
+            "enableSorting": false,
+            "enableHiding": false,
+            "enableColumnActions": true,
+            "filterVariant": "multi-select",
+            "filterSelectOptions": ["Product Manager","Software Engineer","Data Scientist","UX Designer","Marketing Specialist","Product Designer","Business Analyst"]
+        },
+        {
+            "accessorKey": "email",
+            "header": "E-Mail",
+            "size": 200,
+            "enableColumnFilter": false,
+            "enableSorting": false,
+            "enableHiding": false
+        },
+        {
+            "accessorKey": "teams",
+            "header": "Teams",
+            "size": 200,
+            "enableColumnFilter": false,
+            "enableSorting": false,
+            "enableHiding": false
+        },
+        {
+            "accessorKey": "age",
+            "header": "Age",
+            "size": 100,
+            "enableColumnFilter": false,
+            "enableSorting": true,
+            "enableHiding": false
+        }
+    ],
+    "data": [
+        {
+            "name": "Abishek",
+            "userName": "abi_shek",
+            "age": 33,
+            "email": "abi123@orkutenterprises.com",
+            "role": "Product Manager",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "Product",
+                "Development",
+                "Architecture",
+                "Platform"
+            ]
+        },
+        {
+            "name": "Priya Sharma",
+            "userName": "priya_s",
+            "age": 28,
+            "email": "priya.sharma@orkutenterprises.com",
+            "role": "Software Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Quality Assurance",
+                "DevOps",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "James Carter",
+            "userName": "jcarter92",
+            "age": 35,
+            "email": "james.carter@orkutenterprises.com",
+            "role": "UX Designer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Product"
+            ]
+        },
+        {
+            "name": "Lina Chen",
+            "userName": "lina_c",
+            "age": 41,
+            "email": "lina.chen@orkutenterprises.com",
+            "role": "Data Scientist",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Research & Development",
+                "Platform",
+                "Business Analysis",
+                "Architecture"
+            ]
+        },
+        {
+            "name": "Mohammed Ali",
+            "userName": "m_ali",
+            "age": 29,
+            "email": "mohammed.ali@orkutenterprises.com",
+            "role": "Marketing Specialist",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Customer Support",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Sophie Durand",
+            "userName": "sophie_d",
+            "age": 32,
+            "email": "sophie.durand@orkutenterprises.com",
+            "role": "Project Manager",
+            "status": "Working",
+            "teams": [
+                "Project Management",
+                "Development",
+                "Quality Assurance",
+                "Documentation",
+                "Legal",
+                "Product"
+            ]
+        },
+        {
+            "name": "John Doe",
+            "userName": "john_doe1",
+            "age": 28,
+            "email": "john_doe1@orkutenterprises.com",
+            "role": "Software Engineer",
+            "status": "Active",
+            "teams": [
+                "Development",
+                "Quality Assurance",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Alice Smith",
+            "userName": "alice_smith2",
+            "age": 35,
+            "email": "alice_smith2@orkutenterprises.com",
+            "role": "Product Designer",
+            "status": "Inactive",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Marketing"
+            ]
+        },
+        {
+            "name": "Bob Johnson",
+            "userName": "bob_johnson3",
+            "age": 40,
+            "email": "bob_johnson3@orkutenterprises.com",
+            "role": "Project Manager",
+            "status": "Active",
+            "teams": [
+                "Project Management",
+                "Sales",
+                "Acquisition",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Charlie Davis",
+            "userName": "charlie_davis4",
+            "age": 30,
+            "email": "charlie_davis4@orkutenterprises.com",
+            "role": "Data Scientist",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Development",
+                "Business Analysis",
+                "Marketing"
+            ]
+        },
+        {
+            "name": "Emily Brown",
+            "userName": "emily_brown5",
+            "age": 27,
+            "email": "emily_brown5@orkutenterprises.com",
+            "role": "Software Developer",
+            "status": "Active",
+            "teams": [
+                "Development",
+                "Platform",
+                "Architecture",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Daniel Wilson",
+            "userName": "daniel_wilson6",
+            "age": 38,
+            "email": "daniel_wilson6@orkutenterprises.com",
+            "role": "Marketing Manager",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Grace Moore",
+            "userName": "grace_moore7",
+            "age": 31,
+            "email": "grace_moore7@orkutenterprises.com",
+            "role": "UX Designer",
+            "status": "Inactive",
+            "teams": [
+                "User Experience",
+                "Design",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Henry Clark",
+            "userName": "henry_clark8",
+            "age": 34,
+            "email": "henry_clark8@orkutenterprises.com",
+            "role": "DevOps Engineer",
+            "status": "Active",
+            "teams": [
+                "DevOps",
+                "Platform",
+                "Development"
+            ]
+        },
+        {
+            "name": "Isabel Lewis",
+            "userName": "isabel_lewis9",
+            "age": 29,
+            "email": "isabel_lewis9@orkutenterprises.com",
+            "role": "Business Analyst",
+            "status": "Active",
+            "teams": [
+                "Business Analysis",
+                "Sales",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "James Walker",
+            "userName": "james_walker10",
+            "age": 26,
+            "email": "james_walker10@orkutenterprises.com",
+            "role": "Product Manager",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Project Management",
+                "Design"
+            ]
+        },
+        {
+            "name": "Olivia Martin",
+            "userName": "olivia_martin11",
+            "age": 33,
+            "email": "olivia_martin11@orkutenterprises.com",
+            "role": "HR Manager",
+            "status": "Active",
+            "teams": [
+                "HR",
+                "Business Analysis",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Rahul Patel",
+            "userName": "rahul_p",
+            "age": 27,
+            "email": "rahul.patel@orkutenterprises.com",
+            "role": "Frontend Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "User Experience",
+                "Design",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Emily Watson",
+            "userName": "emily_w",
+            "age": 34,
+            "email": "emily.watson@orkutenterprises.com",
+            "role": "Business Analyst",
+            "status": "Working",
+            "teams": [
+                "Business Analysis",
+                "Product",
+                "Data Analyst"
+            ]
+        },
+        {
+            "name": "Carlos Rivera",
+            "userName": "carlos_r",
+            "age": 39,
+            "email": "carlos.rivera@orkutenterprises.com",
+            "role": "DevOps Engineer",
+            "status": "Working",
+            "teams": [
+                "DevOps",
+                "Platform",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Aisha Khan",
+            "userName": "aisha_k",
+            "age": 31,
+            "email": "aisha.khan@orkutenterprises.com",
+            "role": "Sales Manager",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Marketing",
+                "Customer Support",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Thomas Lee",
+            "userName": "thomas_l",
+            "age": 45,
+            "email": "thomas.lee@orkutenterprises.com",
+            "role": "Architect",
+            "status": "Working",
+            "teams": [
+                "Architecture",
+                "Platform",
+                "Development",
+                "Research & Development",
+                "Design"
+            ]
+        },
+        {
+            "name": "Nia Jackson",
+            "userName": "nia_j",
+            "age": 29,
+            "email": "nia.jackson@orkutenterprises.com",
+            "role": "QA Engineer",
+            "status": "Working",
+            "teams": [
+                "Quality Assurance",
+                "Development",
+                "Product"
+            ]
+        },
+        {
+            "name": "Vikram Singh",
+            "userName": "vikram_s",
+            "age": 36,
+            "email": "vikram.singh@orkutenterprises.com",
+            "role": "Product Owner",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Project Management",
+                "User Experience",
+                "Design",
+                "Development"
+            ]
+        },
+        {
+            "name": "Olivia Brown",
+            "userName": "olivia_b",
+            "age": 25,
+            "email": "olivia.brown@orkutenterprises.com",
+            "role": "Content Writer",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Hiro Tanaka",
+            "userName": "hiro_t",
+            "age": 38,
+            "email": "hiro.tanaka@orkutenterprises.com",
+            "role": "Research Lead",
+            "status": "Working",
+            "teams": [
+                "Research & Development",
+                "Data Analyst",
+                "Platform",
+                "Architecture"
+            ]
+        },
+        {
+            "name": "Sara Morales",
+            "userName": "sara_m",
+            "age": 30,
+            "email": "sara.morales@orkutenterprises.com",
+            "role": "Customer Support Lead",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Sales",
+                "Product",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Arjun Mehta",
+            "userName": "arjun_m",
+            "age": 33,
+            "email": "arjun.mehta@orkutenterprises.com",
+            "role": "Backend Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "Architecture",
+                "DevOps",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Clara Evans",
+            "userName": "clara_e",
+            "age": 42,
+            "email": "clara.evans@orkutenterprises.com",
+            "role": "Legal Advisor",
+            "status": "Working",
+            "teams": [
+                "Legal",
+                "Business Analysis",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Liam O’Connor",
+            "userName": "liam_oc",
+            "age": 26,
+            "email": "liam.oconnor@orkutenterprises.com",
+            "role": "UI Designer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Product",
+                "Development"
+            ]
+        },
+        {
+            "name": "Fatima Ahmed",
+            "userName": "fatima_a",
+            "age": 37,
+            "email": "fatima.ahmed@orkutenterprises.com",
+            "role": "Marketing Strategist",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition",
+                "Customer Support",
+                "Product"
+            ]
+        },
+        {
+            "name": "Ethan Kim",
+            "userName": "ethan_k",
+            "age": 28,
+            "email": "ethan.kim@orkutenterprises.com",
+            "role": "Data Engineer",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Platform",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Maya Gupta",
+            "userName": "maya_g",
+            "age": 40,
+            "email": "maya.gupta@orkutenterprises.com",
+            "role": "Project Coordinator",
+            "status": "Working",
+            "teams": [
+                "Project Management",
+                "Development",
+                "Product",
+                "Quality Assurance",
+                "Documentation"
+            ]
+        },
+        {
+            "name": "Noah Phillips",
+            "userName": "noah_p",
+            "age": 31,
+            "email": "noah.phillips@orkutenterprises.com",
+            "role": "Systems Analyst",
+            "status": "Working",
+            "teams": [
+                "Architecture",
+                "Platform",
+                "Business Analysis",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Zara Iqbal",
+            "userName": "zara_i",
+            "age": 24,
+            "email": "zara.iqbal@orkutenterprises.com",
+            "role": "Junior Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Quality Assurance",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Lucas Silva",
+            "userName": "lucas_s",
+            "age": 35,
+            "email": "lucas.silva@orkutenterprises.com",
+            "role": "Acquisition Specialist",
+            "status": "Working",
+            "teams": [
+                "Acquisition",
+                "Sales",
+                "Marketing",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Anika Desai",
+            "userName": "anika_d",
+            "age": 29,
+            "email": "anika.desai@orkutenterprises.com",
+            "role": "UX Researcher",
+            "status": "Working",
+            "teams": [
+                "User Experience",
+                "Design",
+                "Product",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Jacob Nguyen",
+            "userName": "jacob_n",
+            "age": 43,
+            "email": "jacob.nguyen@orkutenterprises.com",
+            "role": "Senior Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Architecture",
+                "Platform",
+                "DevOps",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Leila Hassan",
+            "userName": "leila_h",
+            "age": 32,
+            "email": "leila.hassan@orkutenterprises.com",
+            "role": "Content Strategist",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Oscar Perez",
+            "userName": "oscar_p",
+            "age": 38,
+            "email": "oscar.perez@orkutenterprises.com",
+            "role": "Platform Engineer",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Development"
+            ]
+        },
+        {
+            "name": "Riya Kapoor",
+            "userName": "riya_k",
+            "age": 26,
+            "email": "riya.kapoor@orkutenterprises.com",
+            "role": "Graphic Designer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Samuel Brooks",
+            "userName": "sam_b",
+            "age": 47,
+            "email": "samuel.brooks@orkutenterprises.com",
+            "role": "Engineering Manager",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Architecture",
+                "DevOps",
+                "Project Management",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Kavita Rao",
+            "userName": "kavita_r",
+            "age": 30,
+            "email": "kavita.rao@orkutenterprises.com",
+            "role": "QA Lead",
+            "status": "Working",
+            "teams": [
+                "Quality Assurance",
+                "Development",
+                "Product",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Henry Ford",
+            "userName": "henry_f",
+            "age": 41,
+            "email": "henry.ford@orkutenterprises.com",
+            "role": "Business Development",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Acquisition",
+                "Business Analysis",
+                "Marketing"
+            ]
+        },
+        {
+            "name": "Amara Diallo",
+            "userName": "amara_d",
+            "age": 33,
+            "email": "amara.diallo@orkutenterprises.com",
+            "role": "Support Specialist",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Product",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "David Ortiz",
+            "userName": "david_o",
+            "age": 28,
+            "email": "david.ortiz@orkutenterprises.com",
+            "role": "Mobile Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Sana Malik",
+            "userName": "sana_m",
+            "age": 36,
+            "email": "sana.malik@orkutenterprises.com",
+            "role": "Product Designer",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Design",
+                "User Experience",
+                "Development",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Ella Schmidt",
+            "userName": "ella_s",
+            "age": 25,
+            "email": "ella.schmidt@orkutenterprises.com",
+            "role": "Marketing Coordinator",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Javier Lopez",
+            "userName": "javier_l",
+            "age": 39,
+            "email": "javier.lopez@orkutenterprises.com",
+            "role": "Security Engineer",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Neha Verma",
+            "userName": "neha_v",
+            "age": 31,
+            "email": "neha.verma@orkutenterprises.com",
+            "role": "Research Analyst",
+            "status": "Working",
+            "teams": [
+                "Research & Development",
+                "Data Analyst",
+                "Product",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Isaac Cohen",
+            "userName": "isaac_c",
+            "age": 44,
+            "email": "isaac.cohen@orkutenterprises.com",
+            "role": "Legal Counsel",
+            "status": "Working",
+            "teams": [
+                "Legal",
+                "Acquisition",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Lara Sousa",
+            "userName": "lara_s",
+            "age": 27,
+            "email": "lara.sousa@orkutenterprises.com",
+            "role": "Frontend Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Design",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Omar Farooq",
+            "userName": "omar_f",
+            "age": 35,
+            "email": "omar.farooq@orkutenterprises.com",
+            "role": "Sales Representative",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Customer Support",
+                "Marketing",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Grace Huang",
+            "userName": "grace_h",
+            "age": 29,
+            "email": "grace.huang@orkutenterprises.com",
+            "role": "Data Analyst",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Business Analysis",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Mateo Rossi",
+            "userName": "mateo_r",
+            "age": 40,
+            "email": "mateo.rossi@orkutenterprises.com",
+            "role": "Infrastructure Lead",
+            "status": "Working",
+            "teams": [
+                "DevOps",
+                "Platform",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Priyanka Nair",
+            "userName": "priyanka_n",
+            "age": 32,
+            "email": "priyanka.nair@orkutenterprises.com",
+            "role": "UX Lead",
+            "status": "Working",
+            "teams": [
+                "User Experience",
+                "Design",
+                "Product",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Ryan Foster",
+            "userName": "ryan_f",
+            "age": 26,
+            "email": "ryan.foster@orkutenterprises.com",
+            "role": "Junior QA",
+            "status": "Working",
+            "teams": [
+                "Quality Assurance",
+                "Development",
+                "Product"
+            ]
+        },
+        {
+            "name": "Ayesha Siddiqui",
+            "userName": "ayesha_s",
+            "age": 38,
+            "email": "ayesha.siddiqui@orkutenterprises.com",
+            "role": "Marketing Manager",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition",
+                "Customer Support",
+                "Product"
+            ]
+        },
+        {
+            "name": "Eliot Gray",
+            "userName": "eliot_g",
+            "age": 34,
+            "email": "eliot.gray@orkutenterprises.com",
+            "role": "Backend Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "Architecture",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Sofia Mendes",
+            "userName": "sofia_m",
+            "age": 30,
+            "email": "sofia.mendes@orkutenterprises.com",
+            "role": "Content Manager",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Kabir Sharma",
+            "userName": "kabir_s",
+            "age": 41,
+            "email": "kabir.sharma@orkutenterprises.com",
+            "role": "Engineering Lead",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Architecture",
+                "DevOps",
+                "Project Management",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Chloe Bennett",
+            "userName": "chloe_b",
+            "age": 28,
+            "email": "chloe.bennett@orkutenterprises.com",
+            "role": "Support Analyst",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Product",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Aditya Roy",
+            "userName": "aditya_r",
+            "age": 33,
+            "email": "aditya.roy@orkutenterprises.com",
+            "role": "Product Manager",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Development",
+                "Design",
+                "User Experience",
+                "Project Management"
+            ]
+        },
+        {
+            "name": "Isabella Cruz",
+            "userName": "isabella_c",
+            "age": 37,
+            "email": "isabella.cruz@orkutenterprises.com",
+            "role": "Data Scientist",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Research & Development",
+                "Platform",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Yusuf Bakir",
+            "userName": "yusuf_b",
+            "age": 29,
+            "email": "yusuf.bakir@orkutenterprises.com",
+            "role": "Mobile Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Hannah Kim",
+            "userName": "hannah_k",
+            "age": 45,
+            "email": "hannah.kim@orkutenterprises.com",
+            "role": "Senior Architect",
+            "status": "Working",
+            "teams": [
+                "Architecture",
+                "Platform",
+                "Development",
+                "DevOps",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Rohan Joshi",
+            "userName": "rohan_j",
+            "age": 31,
+            "email": "rohan.joshi@orkutenterprises.com",
+            "role": "Sales Lead",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Acquisition",
+                "Marketing",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Kiran Yadav",
+            "userName": "kiran_y",
+            "age": 29,
+            "email": "kiran.yadav@orkutenterprises.com",
+            "role": "Full Stack Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Sophie Müller",
+            "userName": "sophie_m",
+            "age": 34,
+            "email": "sophie.muller@orkutenterprises.com",
+            "role": "Product Analyst",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Data Analyst",
+                "Business Analysis",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Diego Gonzalez",
+            "userName": "diego_g",
+            "age": 38,
+            "email": "diego.gonzalez@orkutenterprises.com",
+            "role": "Cloud Engineer",
+            "status": "Working",
+            "teams": [
+                "DevOps",
+                "Platform",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Meera Iyer",
+            "userName": "meera_i",
+            "age": 26,
+            "email": "meera.iyer@orkutenterprises.com",
+            "role": "Graphic Designer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Alexander Petrova",
+            "userName": "alex_p",
+            "age": 42,
+            "email": "alexander.petrova@orkutenterprises.com",
+            "role": "Security Analyst",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Quality Assurance",
+                "Legal"
+            ]
+        },
+        {
+            "name": "Jasmine Wu",
+            "userName": "jasmine_w",
+            "age": 31,
+            "email": "jasmine.wu@orkutenterprises.com",
+            "role": "Customer Success Manager",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Sales",
+                "Product",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Amit Choudhary",
+            "userName": "amit_c",
+            "age": 35,
+            "email": "amit.choudhary@orkutenterprises.com",
+            "role": "Tech Lead",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Architecture",
+                "DevOps",
+                "Project Management"
+            ]
+        },
+        {
+            "name": "Charlotte Dubois",
+            "userName": "charlotte_d",
+            "age": 27,
+            "email": "charlotte.dubois@orkutenterprises.com",
+            "role": "Content Creator",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Ravi Kumar",
+            "userName": "ravi_k",
+            "age": 40,
+            "email": "ravi.kumar@orkutenterprises.com",
+            "role": "Research Scientist",
+            "status": "Working",
+            "teams": [
+                "Research & Development",
+                "Data Analyst",
+                "Platform",
+                "Product"
+            ]
+        },
+        {
+            "name": "Elena Ortiz",
+            "userName": "elena_o",
+            "age": 33,
+            "email": "elena.ortiz@orkutenterprises.com",
+            "role": "UX Designer",
+            "status": "Working",
+            "teams": [
+                "User Experience",
+                "Design",
+                "Product",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Omar Saleh",
+            "userName": "omar_s",
+            "age": 28,
+            "email": "omar.saleh@orkutenterprises.com",
+            "role": "Sales Associate",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Customer Support",
+                "Marketing"
+            ]
+        },
+        {
+            "name": "Lila Patel",
+            "userName": "lila_p",
+            "age": 36,
+            "email": "lila.patel@orkutenterprises.com",
+            "role": "Project Manager",
+            "status": "Working",
+            "teams": [
+                "Project Management",
+                "Development",
+                "Product",
+                "Quality Assurance",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Gabriel Santos",
+            "userName": "gabriel_s",
+            "age": 44,
+            "email": "gabriel.santos@orkutenterprises.com",
+            "role": "Senior Architect",
+            "status": "Working",
+            "teams": [
+                "Architecture",
+                "Platform",
+                "Development",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Tara Singh",
+            "userName": "tara_s",
+            "age": 30,
+            "email": "tara.singh@orkutenterprises.com",
+            "role": "QA Specialist",
+            "status": "Working",
+            "teams": [
+                "Quality Assurance",
+                "Development",
+                "Product",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Julian Hayes",
+            "userName": "julian_h",
+            "age": 39,
+            "email": "julian.hayes@orkutenterprises.com",
+            "role": "Marketing Director",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition",
+                "Product",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Anjali Nair",
+            "userName": "anjali_n",
+            "age": 25,
+            "email": "anjali.nair@orkutenterprises.com",
+            "role": "Junior Data Analyst",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Business Analysis",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Mateus Almeida",
+            "userName": "mateus_a",
+            "age": 32,
+            "email": "mateus.almeida@orkutenterprises.com",
+            "role": "Backend Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "Architecture",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Nora Jensen",
+            "userName": "nora_j",
+            "age": 37,
+            "email": "nora.jensen@orkutenterprises.com",
+            "role": "Legal Consultant",
+            "status": "Working",
+            "teams": [
+                "Legal",
+                "Business Analysis",
+                "Acquisition",
+                "Product"
+            ]
+        },
+        {
+            "name": "Siddharth Bose",
+            "userName": "siddharth_b",
+            "age": 41,
+            "email": "siddharth.bose@orkutenterprises.com",
+            "role": "Engineering Manager",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "DevOps",
+                "Architecture",
+                "Project Management",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Ava Thompson",
+            "userName": "ava_t",
+            "age": 29,
+            "email": "ava.thompson@orkutenterprises.com",
+            "role": "UI Developer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Development"
+            ]
+        },
+        {
+            "name": "Haruto Yamada",
+            "userName": "haruto_y",
+            "age": 35,
+            "email": "haruto.yamada@orkutenterprises.com",
+            "role": "Platform Engineer",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Layla Qureshi",
+            "userName": "layla_q",
+            "age": 27,
+            "email": "layla.qureshi@orkutenterprises.com",
+            "role": "Content Strategist",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Ethan Parker",
+            "userName": "ethan_p",
+            "age": 43,
+            "email": "ethan.parker@orkutenterprises.com",
+            "role": "Acquisition Lead",
+            "status": "Working",
+            "teams": [
+                "Acquisition",
+                "Sales",
+                "Marketing",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Shreya Menon",
+            "userName": "shreya_m",
+            "age": 31,
+            "email": "shreya.menon@orkutenterprises.com",
+            "role": "Product Designer",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Design",
+                "User Experience",
+                "Development"
+            ]
+        },
+        {
+            "name": "Leo Bianchi",
+            "userName": "leo_b",
+            "age": 38,
+            "email": "leo.bianchi@orkutenterprises.com",
+            "role": "Data Engineer",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Platform",
+                "DevOps",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Zoe Carter",
+            "userName": "zoe_c",
+            "age": 26,
+            "email": "zoe.carter@orkutenterprises.com",
+            "role": "Support Specialist",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Product",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Vishal Reddy",
+            "userName": "vishal_r",
+            "age": 34,
+            "email": "vishal.reddy@orkutenterprises.com",
+            "role": "Mobile Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Camila Torres",
+            "userName": "camila_t",
+            "age": 40,
+            "email": "camila.torres@orkutenterprises.com",
+            "role": "Marketing Manager",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition",
+                "Product",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Arnav Jain",
+            "userName": "arnav_j",
+            "age": 28,
+            "email": "arnav.jain@orkutenterprises.com",
+            "role": "Frontend Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Design",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Mia Larsen",
+            "userName": "mia_l",
+            "age": 33,
+            "email": "mia.larsen@orkutenterprises.com",
+            "role": "Business Analyst",
+            "status": "Working",
+            "teams": [
+                "Business Analysis",
+                "Product",
+                "Data Analyst",
+                "Project Management"
+            ]
+        },
+        {
+            "name": "Reza Hosseini",
+            "userName": "reza_h",
+            "age": 45,
+            "email": "reza.hosseini@orkutenterprises.com",
+            "role": "Senior DevOps",
+            "status": "Working",
+            "teams": [
+                "DevOps",
+                "Platform",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Pooja Sharma",
+            "userName": "pooja_s",
+            "age": 30,
+            "email": "pooja.sharma@orkutenterprises.com",
+            "role": "QA Engineer",
+            "status": "Working",
+            "teams": [
+                "Quality Assurance",
+                "Development",
+                "Product"
+            ]
+        },
+        {
+            "name": "Finn Walsh",
+            "userName": "finn_w",
+            "age": 37,
+            "email": "finn.walsh@orkutenterprises.com",
+            "role": "Research Lead",
+            "status": "Working",
+            "teams": [
+                "Research & Development",
+                "Data Analyst",
+                "Platform",
+                "Product"
+            ]
+        },
+        {
+            "name": "Sanya Gupta",
+            "userName": "sanya_g",
+            "age": 25,
+            "email": "sanya.gupta@orkutenterprises.com",
+            "role": "UI Designer",
+            "status": "Working",
+            "teams": [
+                "Design",
+                "User Experience",
+                "Product"
+            ]
+        },
+        {
+            "name": "Pedro Costa",
+            "userName": "pedro_c",
+            "age": 41,
+            "email": "pedro.costa@orkutenterprises.com",
+            "role": "Engineering Lead",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Architecture",
+                "DevOps",
+                "Project Management",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Amina Bello",
+            "userName": "amina_b",
+            "age": 32,
+            "email": "amina.bello@orkutenterprises.com",
+            "role": "Sales Manager",
+            "status": "Working",
+            "teams": [
+                "Sales",
+                "Acquisition",
+                "Marketing",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Lucas Meyer",
+            "userName": "lucas_m",
+            "age": 29,
+            "email": "lucas.meyer@orkutenterprises.com",
+            "role": "Backend Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Platform",
+                "Architecture",
+                "DevOps"
+            ]
+        },
+        {
+            "name": "Divya Pillai",
+            "userName": "divya_p",
+            "age": 36,
+            "email": "divya.pillai@orkutenterprises.com",
+            "role": "Product Manager",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Development",
+                "Design",
+                "User Experience",
+                "Project Management"
+            ]
+        },
+        {
+            "name": "Elias Novak",
+            "userName": "elias_n",
+            "age": 44,
+            "email": "elias.novak@orkutenterprises.com",
+            "role": "Security Engineer",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Rhea Chopra",
+            "userName": "rhea_c",
+            "age": 27,
+            "email": "rhea.chopra@orkutenterprises.com",
+            "role": "Content Writer",
+            "status": "Working",
+            "teams": [
+                "Documentation",
+                "Marketing",
+                "Product"
+            ]
+        },
+        {
+            "name": "Theo Grant",
+            "userName": "theo_g",
+            "age": 35,
+            "email": "theo.grant@orkutenterprises.com",
+            "role": "Data Scientist",
+            "status": "Working",
+            "teams": [
+                "Data Analyst",
+                "Research & Development",
+                "Platform",
+                "Business Analysis"
+            ]
+        },
+        {
+            "name": "Ishita Das",
+            "userName": "ishita_d",
+            "age": 31,
+            "email": "ishita.das@orkutenterprises.com",
+            "role": "UX Researcher",
+            "status": "Working",
+            "teams": [
+                "User Experience",
+                "Design",
+                "Product",
+                "Research & Development"
+            ]
+        },
+        {
+            "name": "Rafael Lima",
+            "userName": "rafael_l",
+            "age": 39,
+            "email": "rafael.lima@orkutenterprises.com",
+            "role": "Platform Lead",
+            "status": "Working",
+            "teams": [
+                "Platform",
+                "DevOps",
+                "Architecture",
+                "Development",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Nadine Ali",
+            "userName": "nadine_a",
+            "age": 28,
+            "email": "nadine.ali@orkutenterprises.com",
+            "role": "Support Analyst",
+            "status": "Working",
+            "teams": [
+                "Customer Support",
+                "Product",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Kunal Thakur",
+            "userName": "kunal_t",
+            "age": 33,
+            "email": "kunal.thakur@orkutenterprises.com",
+            "role": "Frontend Engineer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Design",
+                "User Experience",
+                "Quality Assurance"
+            ]
+        },
+        {
+            "name": "Clara Rossi",
+            "userName": "clara_r",
+            "age": 40,
+            "email": "clara.rossi@orkutenterprises.com",
+            "role": "Marketing Strategist",
+            "status": "Working",
+            "teams": [
+                "Marketing",
+                "Sales",
+                "Acquisition",
+                "Product",
+                "Customer Support"
+            ]
+        },
+        {
+            "name": "Sameer Khan",
+            "userName": "sameer_k",
+            "age": 26,
+            "email": "sameer.khan@orkutenterprises.com",
+            "role": "Junior Developer",
+            "status": "Working",
+            "teams": [
+                "Development",
+                "Quality Assurance",
+                "User Experience"
+            ]
+        },
+        {
+            "name": "Violet Harper",
+            "userName": "violet_h",
+            "age": 37,
+            "email": "violet.harper@orkutenterprises.com",
+            "role": "Legal Advisor",
+            "status": "Working",
+            "teams": [
+                "Legal",
+                "Business Analysis",
+                "Acquisition"
+            ]
+        },
+        {
+            "name": "Rohan Malhotra",
+            "userName": "rohan_m",
+            "age": 30,
+            "email": "rohan.malhotra@orkutenterprises.com",
+            "role": "Product Owner",
+            "status": "Working",
+            "teams": [
+                "Product",
+                "Development",
+                "Design",
+                "User Experience",
+                "Project Management"
+            ]
+        }
+    ]
+}
